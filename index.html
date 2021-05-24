@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__main">
+          <div class="header__block-1">
+            <div class="burger-container">
+              <div class="burger">
+                   <span class="burger__line"></span>
+              </div>
+            </div>
+            <div class="header__main-logo">
+            <svg width="78" height="52" viewBox="0 0 78 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__svg">
+            <path d="M63.0559 15.8815L54.2119 15.8947L27.8012 40.7922H10.0354V23.4593L34.2348 0.848633L17.993 0.899213L0 17.6625V51.1511H34.0283L63.0418 23.5687L63.0559 15.8815Z"/>
+            <path d="M43.9721 0.848633L14.9586 28.4318L14.9453 36.1182L23.7884 36.1049L50.1991 11.2075H67.9649V28.5404L43.7656 51.1511L60.0074 51.1013L78.0004 34.338V0.848633H43.9721Z"/>
+            </svg>
+          </div>
+          <nav class="header__main-nav">
+            <ul class="header__main-list">
+              <li class="header__main-list-item"><a href="#" class="header__main-link">
+                Main
+              </a></li>
+              <li class="header__main-list-item"><a href="#" class="header__main-link">
+                Gallery
+              </a></li>
+              <li class="header__main-list-item"><a href="#" class="header__main-link">
+                News
+              </a></li>
+              <li class="header__main-list-item"><a href="#" class="header__main-link">
+                Profile
+              </a></li>
+            </ul>
+          </nav>
+          </div>
+          
+          <div class="header__main-number">
+            <a href="tel:+544349000000" class="header__main-phone">
+              +544 3490 00000
+            </a>
+            <span class="header__main-span">
+              Звони скорее!
+            </span>
+          </div>
+        </div>
+        <p class="header__cats-quantity">
+          Найдено 349 котов
+        </p>
+      </div>
+    </header>
+
+
+    <main class="main">
+      
+      <div class="container">
+
+        <button class="to-top">
+          <img src="images/totop.png" alt="totop">
+        </button>
+
+        <div class="main__sort">
+          <span class="main__sort-span">
+            Сортировать по:
+          </span>
+          <div class="main__select-container">
+            <div class="selected main__sel1">
+              <div class="selected__head">
+                  <span class="selected__current">
+                    Цене
+                  </span>
+                  <div class="selected__icon">
+                    <img src="images/icon.png" alt="icon" class="selected__icon-img">
+                  </div>
+                </div>
+                <div class="selected__body">
+                  <div class="selected__item" id="sortPlus">
+                     По возрастанию
+                  </div>
+                    <div class="selected__item" id="sortMinus">
+                     По убыванию
+                  </div>
+                </div>
+            </div>
+            <div class="selected">
+                <div class="selected__head">
+                    <span class="selected__current">
+                      Возрасту
+                    </span>
+                    <div class="selected__icon">
+                      <img src="images/icon.png" alt="icon" class="selected__icon-img">
+                    </div>
+                  </div>
+                  <div class="selected__body">
+                    <div class="selected__item" id="sortAgePlus">
+                       По возрастанию
+                    </div>
+                      <div class="selected__item" id="sortAgeMinus">
+                       По убыванию
+                    </div>
+                  </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="cards-container">
+
+          <div class="card" data-price="30000" data-age="2">
+
+            <div class="card__discount">
+              <span> -40% </span>
+            </div>
+            
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__heart">
+            <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z">
+            </svg>
+            <div class="card__picture">
+              <img src="images/cats/cat1.png" alt="cat" class="card__img">
+            </div>
+            <div class="card__block">
+              <h3 class="card__title">
+              Кот полосатый
+              </h3>
+            <div class="card__inform">
+                <span class="card__color">
+                  Коричневый окрас
+                </span>
+                <p class="card__text">
+                  <span class="card__age">
+                    2 мес.
+                  </span>
+                  <span class="card__span">
+                    Возраст
+                  </span>
+                </p>
+                <p class="card__text">
+                  <span class="card__legs">
+                    4
+                  </span>
+                  <span class="card__span">
+                    Кол-во лап
+                  </span>
+                </p>
+            </div>
+              <p class="card__price card-price">
+                30 000 руб.
+              </p>
+            </div>
+            
+          <button class="card__button">
+            Купить
+          </button>
+          </div>
+
+          <div class="card" data-price="40000" data-age="2">
+             
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__heart">
+            <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z">
+            </svg>
+            <div class="card__picture">
+              <img src="images/cats/cat2.png" alt="cat" class="card__img">
+            </div>
+            <div class="card__block">
+              <h3 class="card__title">
+              Кот полосатый
+              </h3>
+            <div class="card__inform">
+                <span class="card__color">
+                  Коричневый окрас
+                </span>
+                <p class="card__text">
+                  <span class="card__age">
+                    2 мес.
+                  </span>
+                  <span class="card__span">
+                    Возраст
+                  </span>
+                </p>
+                <p class="card__text">
+                  <span class="card__legs">
+                    4
+                  </span>
+                  <span class="card__span">
+                    Кол-во лап
+                  </span>
+                </p>
+            </div>
+              <p class="card__price card-price">
+                40 000 руб.
+              </p>
+            </div>
+            
+          <button class="card__button black">
+            Продан
+          </button>
+          </div>
+
+          <div class="card" data-price="20000" data-age="3">
+            
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__heart">
+            <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z">
+            </svg>
+            <div class="card__picture">
+              <img src="images/cats/cat3.png" alt="cat" class="card__img">
+            </div>
+            <div class="card__block">
+              <h3 class="card__title">
+              Кот полосатый
+              </h3>
+            <div class="card__inform">
+                <span class="card__color">
+                  Коричневый окрас
+                </span>
+                <p class="card__text">
+                  <span class="card__age">
+                    3 мес.
+                  </span>
+                  <span class="card__span">
+                    Возраст
+                  </span>
+                </p>
+                <p class="card__text">
+                  <span class="card__legs">
+                    4
+                  </span>
+                  <span class="card__span">
+                    Кол-во лап
+                  </span>
+                </p>
+            </div>
+              <p class="card__price card-price">
+                20 000 руб.
+              </p>
+            </div>
+            
+          <button class="card__button">
+            Купить
+          </button>
+          </div>
+
+          <div class="card" data-price="25000" data-age="5">
+            
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__heart">
+            <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z">
+            </svg>
+            <div class="card__picture">
+              <img src="images/cats/cat1.png" alt="cat" class="card__img">
+            </div>
+            <div class="card__block">
+              <h3 class="card__title">
+              Кот полосатый
+              </h3>
+            <div class="card__inform">
+                <span class="card__color">
+                  Коричневый окрас
+                </span>
+                <p class="card__text">
+                  <span class="card__age">
+                    5 мес.
+                  </span>
+                  <span class="card__span">
+                    Возраст
+                  </span>
+                </p>
+                <p class="card__text">
+                  <span class="card__legs">
+                    4
+                  </span>
+                  <span class="card__span">
+                    Кол-во лап
+                  </span>
+                </p>
+            </div>
+              <p class="card__price card-price">
+                25 000 руб.
+              </p>
+            </div>
+            
+          <button class="card__button">
+            Купить
+          </button>
+          </div>
+
+          <div class="card" data-price="30000" data-age="2">
+
+            <div class="card__discount">
+              <span> -40% </span>
+            </div>
+             
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__heart">
+            <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z">
+            </svg>
+            <div class="card__picture">
+              <img src="images/cats/cat3.png" alt="cat" class="card__img">
+            </div>
+            <div class="card__block">
+              <h3 class="card__title">
+              Кот полосатый
+              </h3>
+            <div class="card__inform">
+                <span class="card__color">
+                  Коричневый окрас
+                </span>
+                <p class="card__text">
+                  <span class="card__age">
+                    2 мес.
+                  </span>
+                  <span class="card__span">
+                    Возраст
+                  </span>
+                </p>
+                <p class="card__text">
+                  <span class="card__legs">
+                    4
+                  </span>
+                  <span class="card__span">
+                    Кол-во лап
+                  </span>
+                </p>
+            </div>
+              <p class="card__price card-price">
+                30 000 руб.
+              </p>
+            </div>
+            
+          <button class="card__button">
+            Купить
+          </button>
+          </div>
+
+          <div class="card" data-price="10000" data-age="4">
+
+            <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__heart">
+            <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z">
+            </svg>
+            <div class="card__picture">
+              <img src="images/cats/cat2.png" alt="cat" class="card__img">
+            </div>
+            <div class="card__block">
+              <h3 class="card__title">
+              Кот полосатый
+              </h3>
+            <div class="card__inform">
+                <span class="card__color">
+                  Коричневый окрас
+                </span>
+                <p class="card__text">
+                  <span class="card__age">
+                    4 мес.
+                  </span>
+                  <span class="card__span">
+                    Возраст
+                  </span>
+                </p>
+                <p class="card__text">
+                  <span class="card__legs">
+                    4
+                  </span>
+                  <span class="card__span">
+                    Кол-во лап
+                  </span>
+                </p>
+            </div>
+              <p class="card__price card-price">
+                10 000 руб.
+              </p>
+            </div>
+            
+          <button class="card__button black">
+            Продан
+          </button>
+          </div>
+          
+
+        </div>
+
+        <button class="main__more">
+          Показать ещё 20
+        </button>
+          
+      </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+      <div class="container">
+      <div class="footer__container">
+
+        <div class="footer__block">
+          <h2 class="footer__title">
+            Успей купить!
+          </h2>
+          <p class="footer__inform">
+            Подпишись и успей словить все акции
+          </p>
+        </div>
+        <form action="#" class="footer__form form">
+          <div class="footer__form-inputs">
+            <input type="email" class="footer__input email" placeholder="Email">
+            <input type="submit" class="footer__input footer__submit"> 
+          </div>
+          <label for="subscribe" class="footer__label">
+          <input type="checkbox" name="subscribe" id="subscribe" class="footer__subscribe _req">
+          <span class="footer__fake"></span>  
+          <span> Подписаться на новости </span>
+          </label>
+        </form>
+        
+      </div>  
+      </div>  
+
+    </footer>
+  </div>
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
